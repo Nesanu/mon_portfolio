@@ -1,5 +1,7 @@
 import {NavLink, useNavigate} from "react-router-dom";
 import styles from "./Header.module.scss";
+import portraitImg from "../../../assets/images/portrait_Nicoleta.webp"; // TODO : inséré une image !²
+
 
 const Header = () => {
     const navigate = useNavigate()
@@ -7,11 +9,12 @@ const Header = () => {
     const handleHomeClick = () => {
         navigate('/')
     }
-
     return (
         <header className={styles.header}>
             <div className={styles.nav_header} onClick={handleHomeClick}>
-                <img src="#!" alt="Nicoleta profil" className={styles.nav_header_img}/> 
+<img src={portraitImg} alt="Nicoleta profil" className={styles.nav_header_img}/>
+
+                {/* <img src="#!" alt="Nicoleta profil" className={styles.nav_header_img}/>  */}
                 {/* TODO : inséré une image ! */}
             </div>
             <nav className={styles.nav}>

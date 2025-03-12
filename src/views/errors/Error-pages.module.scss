@@ -1,0 +1,47 @@
+@use "/src/styles/index";
+@use "/src/styles/variables";
+@use "/src/styles/mixins";
+@use "/src/styles/typography";
+@use "/src/styles/utilities";
+
+.errorPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding-bottom: 0;
+  // min-height: calc(100vh - 320px);
+}
+
+.errorTitle {
+  margin: 0;
+  font-size: 96px;
+  font-weight: 700;
+  color: variables.$primary-bg-kasa-color;
+  @include mixins.media-query(desktop) {
+    font-size: 288px;
+  }
+}
+
+.errorMessage {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: variables.$primary-bg-kasa-color;
+  @include mixins.media-query(desktop) {
+    font-size: 36px;
+  }
+}
+
+.errorRedirection {
+  color: black;
+  font-size: 14px;
+  text-decoration: underline;
+  font-weight: 500;
+  @include mixins.media-query(desktop) {
+    font-size: 18px;
+  }
+}
+
+
+
