@@ -3,6 +3,7 @@ import styles from "./Header.module.scss";
 
 const Header = () => {
     const navigate = useNavigate()
+    
     const handleHomeClick = () => {
         navigate('/')
     }
@@ -10,7 +11,8 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.nav_header} onClick={handleHomeClick}>
-                <img src="#!" alt="Nicoleta profil" className={styles.nav_header_img}/>
+                <img src="#!" alt="Nicoleta profil" className={styles.nav_header_img}/> 
+                {/* TODO : inséré une image ! */}
             </div>
             <nav className={styles.nav}>
                 <ul>

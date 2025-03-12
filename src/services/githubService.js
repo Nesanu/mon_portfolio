@@ -3,7 +3,7 @@ const githubUsername = import.meta.env.VITE_GITHUB_USERNAME;
 
 /**
  * Fonction utilitaire pour effectuer un appel GET générique
- * @param {string} endpoint - L'endpoint de l'API (par exemple, '/TonyLaPoche/repos')
+ * @param {string} endpoint - L'endpoint de l'API (par exemple, '/Nesanu/repos')
  * @returns {Promise<{status: number, data: any, message?: string}>} - La réponse JSON si la requête réussit ou un objet avec un message d'erreur
  */
 async function fetchFromGitHub(endpoint) {

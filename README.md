@@ -11,11 +11,8 @@ Assurez-vous que vous avez installé les outils suivants avant de commencer :
 ## Installation
 
 1. Clonez le projet ou téléchargez-le dans votre environnement local.
-2. Accédez au dossier du projet :
-   ```bash
-   cd my-app
-   ```
-3. Installez les dépendances nécessaires :
+
+2. Installez les dépendances nécessaires :
    ```bash
    npm install
    ```
@@ -52,7 +49,7 @@ Ce projet utilise les technologies suivantes :
 
 N'hésitez pas à personnaliser ce template pour répondre à vos besoins spécifiques pour le projet !
 
-## Auteur Antoine Terrade
+## Auteur Nicoleta ESANU-DESBOIS
 
 Ce projet a été conçu pour **Nicoleta**, une étudiante développeuse junior, afin de créer un portfolio fonctionnel et moderne.
 
