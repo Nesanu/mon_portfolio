@@ -1,0 +1,27 @@
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: #{$breakpoint-mobile}) { @content; }
+  }
+  @if $breakpoint == tablet {
+    @media (max-width: #{$breakpoint-tablet}) { @content; }
+  }
+  @if $breakpoint == pc {
+    @media (max-width: #{$breakpoint-pc}) { @content; }
+  }
+  @if $breakpoint == large {
+    @media (max-width: #{$breakpoint-large}) { @content; }
+  }
+}
+
+// Exemple : police fluide selon la taille de l'écran
+@mixin fluid-font($min-size, $max-size) {
+  font-size: $min-size;
+
+  @media (min-width: $breakpoint-mobile) {
+    font-size: calc(#{$min-size} + (#{$max-size} - #{$min-size}) * ((100vw - #{$breakpoint-mobile}) / (#{$breakpoint-large} - #{$breakpoint-mobile})));
+  }
+
+  @media (min-width: $breakpoint-large) {
+    font-size: $max-size;
+  }
+}

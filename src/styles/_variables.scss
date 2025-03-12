@@ -1,0 +1,25 @@
+// Couleurs principales
+$color-primary: #007bff;
+$color-secondary: #6c757d;
+$color-background: #f9f9f9;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray: #6c757d;
+$color-danger: #dc3545;
+$color-success: #28a745;
+
+// Typographie
+$font-family-main: 'Arial', sans-serif;
+$font-family-secondary: 'Georgia', serif;
+
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+// Breakpoints (en pixels)
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-pc: 992px;
+$breakpoint-large: 1200px;
+
+// Espacement
+$spacing-unit: 1rem;
