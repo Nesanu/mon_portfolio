@@ -1,6 +1,6 @@
 # Portefeuille de Nicoleta - Projet Template
 
-Ce projet est un template de portfolio pour Nicoleta, une étudiante développeuse junior.
+Ce projet est un template de portfolio pour Nicoleta Esanu-Desbois, une étudiante développeuse junior.
 
 ## Pré-requis
 
@@ -49,7 +49,7 @@ Ce projet utilise les technologies suivantes :
 
 N'hésitez pas à personnaliser ce template pour répondre à vos besoins spécifiques pour le projet !
 
-## Auteur Nicoleta ESANU-DESBOIS
+## Auteure Nicoleta ESANU-DESBOIS
 
 Ce projet a été conçu pour **Nicoleta**, une étudiante développeuse junior, afin de créer un portfolio fonctionnel et moderne.
 
