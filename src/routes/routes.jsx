@@ -1,12 +1,12 @@
 import {createBrowserRouter} from "react-router-dom";
 import projetLoader from "./loader/projetLoader.jsx";
 import ProjetsPage from "../views/projets/ProjetsPage";
-import ProjetPage from "../views/projets/projet/ProjetPage";
 import Home from "../views/home/Home.jsx";
 import Layout from "../core/layout/Layout.jsx";
 import Contact from "../views/contact/Contact.jsx";
 import About from "../views/about/About.jsx";
 import ErrorPage from "../views/errors/Error-page";
+import ProjetPage from "../views/projets/projet/ProjetPage.jsx";
 
 
 export const routes = createBrowserRouter([

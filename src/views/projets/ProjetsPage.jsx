@@ -50,6 +50,8 @@ export default function ProjetsPage() {
             </div>
         );
     }
+    
+    
 
     return (
         <div className={styles["projets-page"]}>
