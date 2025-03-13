@@ -1,0 +1,50 @@
+@use "/src/styles/index";
+
+.home{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    font-size: clamp(12px, 1.8vw, 18px);
+    color: black;
+    .home_title{
+        font-size: clamp(20px, 2.5vw, 30px);
+        font-weight: 700;
+        color: #FF6060;
+    }
+    .home_content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .home_content_title{
+            font-size: clamp(18px, 2.5vw, 25px);
+            font-weight: 700;
+            color: #FF6060;
+        }
+        .home_content_text{
+            font-size: clamp(12px, 1.8vw, 18px);
+            color: black;
+        }
+    }
+    .home_button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px;
+        background-color: #FF6060;
+        color: #F6F6F6;
+        border-radius: 10px;
+        font-size: clamp(12px, 1.8vw, 18px);
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            background-color: #F6F6F6;
+            color: #FF6060;
+        }
+    }
+}
+
+

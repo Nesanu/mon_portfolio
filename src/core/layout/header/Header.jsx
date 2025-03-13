@@ -1,6 +1,6 @@
 import {NavLink, useNavigate} from "react-router-dom";
 import styles from "./Header.module.scss";
-import portraitImg from "../../../assets/images/portrait_Nicoleta.webp"; // TODO : inséré une image !²
+import portraitImg from "../../../assets/images/portrait_Nicoleta.png"; // TODO : inséré une image !²
 
 
 const Header = () => {
