@@ -6,6 +6,7 @@ import Home from "../views/home/Home.jsx";
 import Layout from "../core/layout/Layout.jsx";
 import Contact from "../views/contact/Contact.jsx";
 import About from "../views/about/About.jsx";
+import ErrorPage from "../views/errors/Error-page";
 
 
 export const routes = createBrowserRouter([
@@ -54,10 +55,15 @@ export const routes = createBrowserRouter([
                 {/*// TODO Crée une page spécifique d'erreur quand un ID de projet est introuvable*/}
             </Layout>
         ),
-        loader: projetLoader
+        loader: projetLoader,
+        // errorElement: (
+        //     <Layout>
+        //         <ErrorPage />
+        //     </Layout>
+        // )
     },
     {
-        path: "*",
+        path: "*", //Crée une page spécifique d'erreur un url est introuvable
         element: (
             <Layout>
                 <p>Error 404 introuvable</p>
@@ -65,6 +71,29 @@ export const routes = createBrowserRouter([
                 // TODO PRINCIPALE - Crée une page spécifique d'erreur un url est introuvable
                 // */}
             </Layout>
+        ),
+        errorElement: (
+            <Layout>
+                <ErrorPage />
+            </Layout>
         )
     }
 ])
+
+
+
+//Exemple de route pour un logement
+// {
+//     path: "logement/:id",
+//     element: (
+//         <Layout>
+//             <Logement />
+//         </Layout>
+//     ),
+//     loader: logementLoader,
+//     errorElement: (
+//         <Layout>
+//             <ErrorPage />
+//         </Layout>
+//     ),
+// },

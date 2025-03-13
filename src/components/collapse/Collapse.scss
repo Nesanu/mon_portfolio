@@ -3,6 +3,10 @@
 @use "/src/styles/index";
 
 .collapse{
+    display:flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
     background-color: #FDEADA;
     max-width: 1100px;
     // border-bottom-left-radius: 5px;
@@ -17,8 +21,8 @@
         justify-content: space-between;
         align-items: center;
         gap: 10px;
-        background-color:  #FF6060;
-        color: black;
+        background-color:  #f0a500;
+        color: #006699;
         border-radius: 10px;
         font-weight: 700;
         font-size: clamp(13px, 1.8vw, 18px);

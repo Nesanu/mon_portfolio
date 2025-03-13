@@ -1,5 +1,6 @@
 @use "/src/styles/index";
 @use "/src/styles/utilities";
+@use "/src/styles/variables";
 
 .errorPage {
   display: flex;
@@ -14,20 +15,20 @@
   margin: 0;
   font-size: 96px;
   font-weight: 700;
-  color: variables.$primary-bg-kasa-color;
-  @include mixins.media-query(desktop) {
-    font-size: 288px;
-  }
+ $color-danger: #dc3545;;
+  // @include mixins.media-query(desktop) {
+  //   font-size: 288px;
+  // }
 }
 
 .errorMessage {
   font-size: 18px;
   font-weight: 500;
   text-align: center;
-  color: variables.$primary-bg-kasa-color;
-  @include mixins.media-query(desktop) {
-    font-size: 36px;
-  }
+  $color-danger: #dc3545;
+  // @include mixins.media-query(desktop) {
+  //   font-size: 36px;
+  // }
 }
 
 .errorRedirection {
@@ -35,9 +36,9 @@
   font-size: 14px;
   text-decoration: underline;
   font-weight: 500;
-  @include mixins.media-query(desktop) {
-    font-size: 18px;
-  }
+  // @include mixins.media-query(desktop) {
+  //   font-size: 18px;
+  // }
 }
 
 

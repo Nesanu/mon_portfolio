@@ -5,10 +5,19 @@ const Home = () => {
 
   const handleHomeClick = () => {
     // Add your click handling logic here
-    console.log("Home background clicked");
+    // console.log("Home background clicked");
   };
   return (
-    <div>
+   <div className={styles.container_home}>
+
+<div className={styles.backgroundHomeImg} onClick={handleHomeClick}>
+        <img
+          src={backgroundHomeImg}
+          alt="backgroundHomeImg"
+          className={styles.backgroundHomeImg}
+        />
+      </div>
+    <div className={styles.homeContent}>
       <h1>Bienvenue sur mon Portfolio</h1>
       <p>Je suis Nicoleta Esanu-Desbois, développeuse web junior.</p>
       <p>
@@ -41,13 +50,8 @@ const Home = () => {
         information complémentaire.
       </p>
 
-      <div className={styles.backgroundHomeImg} onClick={handleHomeClick}>
-        <img
-          src={backgroundHomeImg}
-          alt="backgroundHomeImg"
-          className={styles.backgroundHomeImg}
-        />
-      </div>
+
+    </div>
     </div>
   );
 };
