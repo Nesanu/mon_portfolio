@@ -1,14 +1,18 @@
 import styles from 'repoHeader.module.scss' // TODO: Importer le fichier de style
 import PropTypes from 'prop-types';
+
 export const RepoHeader = (repo) => {
   return (
     <>
-      <h1 className={styles.title}>{repos.name}</h1>
+      <h1 className={styles.title}>{repo.name}</h1>
       <p className={styles.description}>
-        {repos.description || "Aucune description fournie."}
+        {repo.description || "Aucune description fournie."}
       </p>
     </>
   );
 };
-
-// :TODO : Ajouter les propTypes   
+RepoHeader.propTypes = {
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string,
+};
+  

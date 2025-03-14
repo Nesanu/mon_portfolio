@@ -1,55 +1,21 @@
 @use "/src/styles/index";
 
-.home {
-  display: flex;
-  //   gap: 20px;
-  padding: 20px;
-  background-color: #f6f6f6;
-  border-radius: 10px;
-  font-size: clamp(12px, 1.8vw, 18px);
-  color: black;
-  .home_title {
-    font-size: clamp(20px, 2.5vw, 30px);
-    font-weight: 700;
-    color: #ff6060;
-  }
-  .home_content {
-    display: flex;
-    .home_content_title {
-      font-size: clamp(18px, 2.5vw, 25px);
-      font-weight: 700;
-      color: #ff6060;
-    }
-    .home_content_text {
-      font-size: clamp(12px, 1.8vw, 18px);
-      color: black;
-    }
-  }
-  .home_button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 20px;
-    background-color: #ff6060;
-    color: #f6f6f6;
-    border-radius: 10px;
-    font-size: clamp(12px, 1.8vw, 18px);
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    &:hover {
-      background-color: #f6f6f6;
-      color: #ff6060;
-    }
-  }
-}
-
+// .home {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 20px;
+//   padding: 20px;
+//   background-color: #f6f6f6;
+//   border-radius: 10px;
+//   font-size: clamp(12px, 1.8vw, 18px);
+//   color: black;
+// }
 .container_home {
   width: 100%;
   display: flex;
   flex-direction: row;
   gap: 20px;
-  padding: 20px;
+  padding: 1em;
   background-color: #f6f6f6;
   border-radius: 10px;
   font-size: clamp(12px, 1.8vw, 18px);
@@ -62,7 +28,7 @@
   align-items: stretch;
   position: relative;
   background-color: inherit;
-  max-width: 1200px;
+  max-width: 1240px;
   border-radius: 20px;
   margin: 0 auto;
   box-shadow: 0 5px 20px 15px #0000001a;
@@ -71,7 +37,7 @@
 
 .background_container {
   position: relative;
-  width: 45%;
+  width: 90%;
   height: auto;
   overflow: hidden;
   
@@ -92,4 +58,8 @@
   flex-direction: column;
   gap: 1em;
   height: min-content;
+  padding: 2em;
+  padding-left: 0.5em;
+  text-align: justify;
+  justify-content: center;
 }
