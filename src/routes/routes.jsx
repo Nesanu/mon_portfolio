@@ -49,34 +49,20 @@ export const routes = createBrowserRouter([
                 <ProjetPage/>
             </Layout>
         ),
+        loader: projetLoader,
         errorElement: (
             <Layout>
-                <p>Error 403 Page Projet introuvable</p>
-                {/*// TODO Crée une page spécifique d'erreur quand un ID de projet est introuvable*/}
+                <ErrorPage context="Le projet que vous rechercher n'existe pas"/>
             </Layout>
-        ),
-        loader: projetLoader,
-        // errorElement: (
-        //     <Layout>
-        //         <ErrorPage />
-        //     </Layout>
-        // )
+        )
     },
     {
         path: "*", //Crée une page spécifique d'erreur un url est introuvable
         element: (
             <Layout>
-                <p>Error 404 introuvable</p>
-                {/*
-                // TODO PRINCIPALE - Crée une page spécifique d'erreur un url est introuvable
-                // */}
-            </Layout>
-        ),
-        errorElement: (
-            <Layout>
                 <ErrorPage />
             </Layout>
-        )
+        ),
     }
 ])
 

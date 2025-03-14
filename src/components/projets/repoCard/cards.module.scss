@@ -1,0 +1,76 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    cursor: pointer;
+
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
+  }
+  
+  .repo-name {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .repo-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .repo-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+  
+    .language {
+      background-color: #efefef;
+      border-radius: 4px;
+      padding: 2px 6px;
+      font-size: 0.8rem;
+      color: #444;
+    }
+  
+    .stars {
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #333;
+    }
+  }
+  
+  .repo-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-align: center;
+  
+    &:hover {
+      background-color: #005da0;
+    }
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }

@@ -1,5 +1,5 @@
 import "./Error-pages.module.scss";  
-import { Link, useRouteError } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
   /**
@@ -10,15 +10,15 @@ import { Link, useRouteError } from "react-router-dom";
    * @example
    * <ErrorPage />
     */
-export default function ErrorPage() {
-  const error = useRouteError();
+export default function ErrorPage({context}) {
+
   return (
     <section className="errorPage">
      
-      <h1 className="errorTitle">{error.status}</h1>
+      <h1 className="errorTitle">Page indisponible</h1>
 
       <p className="errorMessage">
-        Oups! La page que vous demandez n&apos;existe pas. Veuillez vérifier
+        {!context ? "contextOups! La page que vous demandez n&apos;existe pas. Veuillez vérifier" : context}
       </p>
       <Link to="/" className="errorRedirection">
         Retourner sur la page d&apos;accueil

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styles from "./ProjetsPage.module.scss";
 import { getUserRepos } from "../../services/githubService.js";
-import { Link } from "react-router-dom"; // Import du fichier SCSS pour le style
+import { Loader } from "../../components/loader/loader.jsx";
+import { Card } from "../../components/projets/repoCard/cards.jsx";
 
 export default function ProjetsPage() {
     const [repos, setRepos] = useState([]);
@@ -28,14 +29,16 @@ export default function ProjetsPage() {
             } catch (err) {
                 setError("Une erreur est survenue. Veuillez réessayer plus tard.");
             } finally {
-                setLoading(false);
+                setTimeout(() => {
+                    setLoading(false);
+                }, 2000);
             }
         }
 
         fetchRepos();
     }, []);
 
-    if (loading) return <p className={styles["loading"]}>Chargement des projets...</p>;
+    if (loading) return <Loader />;
 
     if (error) {
         return (
@@ -58,34 +61,7 @@ export default function ProjetsPage() {
             <h1 className={styles.title}>Mes Projets GitHub</h1>
             <div className={styles["repos-container"]}>
                 {repos.map((repo) => (
-                    <div className={styles.card} key={repo.id}>
-                        <h2 className={styles["repo-name"]}>{repo.name}</h2>
-                        <p className={styles["repo-description"]}>
-                            {repo.description ? repo.description : "Aucune description."}
-                        </p>
-                        <div className={styles["repo-info"]}>
-                            <span className={styles.language}>{repo.language}</span>
-                            <span className={styles.stars}>
-                                ⭐ {repo.stargazers_count} Stars
-                            </span>
-                        </div>
-                        <div className={styles["buttons"]}>
-                            <a
-                                href={repo.html_url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={styles["repo-link"]}
-                            >
-                                Voir le projet
-                            </a>
-                            <Link
-                                to={`${repo.name}`}
-                                className={styles["repo-link"]}
-                            >
-                                En savoir plus
-                            </Link>
-                        </div>
-                    </div>
+                    <Card repo={repo} key={repo.id} />
                 ))}
             </div>
         </div>
