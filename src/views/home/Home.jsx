@@ -17,14 +17,14 @@ const Home = () => {
       </div>
 
       <div className={styles.homeContent}>
-        <h1 className="title">Bienvenue sur mon Portfolio</h1>
+        <h1 className="title">Bienvenue sur mon portfolio!</h1>
         <p>Je suis Nicoleta Esanu-Desbois, développeuse web junior.</p>
         <p>
           Après une expérience professionnelle de 19 ans dans le secteur de
-          l'administration des ventes, du commerce et l'export, j'ai décidé de
+          l'administration des ventes, du commerce et de l'export, j'ai décidé de
           me reconvertir dans le développement web. J'ai suivi une formation
           intensive au sein de l'organisme de formation Openclassrooms, reconnu
-          pour la qualité et le sérieux des formations professionnelles et d'une
+          pour la qualité et le sérieux des formations professionnelles, ainsi que pour sa
           belle notoriété dans le monde des formations digitales.{" "}
         </p>
         <p>
@@ -33,7 +33,7 @@ const Home = () => {
           compétences solides en développement web, souhaitant donner à ma
           carrière une direction tournée vers le digital, j'ai le plaisir de
           vous faire part de mon souhait de poursuivre ma carrière au sein de
-          votre société en tant que Développeur web. J’ai acquis des compétences
+          votre société en tant que Développeuse Web. J’ai acquis des compétences
           opérationnelles et une connaissance de divers langages techniques et
           méthodologies recherchés, qui me permettront d’être rapidement
           efficace.

@@ -3,5 +3,31 @@
   color: #006699;
   padding: 1rem 2rem;
   text-align: center;
-  font-size: 0.9rem;
+  // font-size: 1em; 
+  font-style: italic;
 }
+
+.fab fa-linkedin {
+  color:#006699;
+  display: var(--fa-display, inline-block);
+  height: 1.5em;
+}
+
+.fab fa-github {
+  color:#006699;
+  display: var(--fa-display, inline-block);
+  height: 1.5em;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1rem;
+}
+
+// plus other social media icons, such as:
+// .fab fa-twitter {
+//   color:#006699;
+//   font-size: 1.5em;
+// }

@@ -1,0 +1,40 @@
+@use "/src/styles/index";
+@use "/src/styles/utilities";
+@use "/src/styles/variables";
+
+
+.repoHeader {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-bottom: 1px solid #e9ecef;
+
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #343a40;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        font-size: 16px;
+        color: #6c757d;
+        margin-bottom: 15px;
+    }
+
+    .stats {
+        display: flex;
+        gap: 15px;
+
+        .statItem {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #495057;
+
+            .icon {
+                margin-right: 5px;
+                color: #006699;
+            }
+        }
+    }
+}

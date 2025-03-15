@@ -1,3 +1,5 @@
+@use "/src/styles/index";
+
 .projets-page {
   font-family: Arial, sans-serif;
   padding: 20px;
@@ -8,12 +10,11 @@
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.7em;
   margin-bottom: 20px;
   color: #333;
+  font-weight: bold;
 }
-
-
 
 .error {
   font-size: 1.5rem;

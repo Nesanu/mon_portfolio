@@ -11,7 +11,7 @@ import ProjetPage from "../views/projets/projet/ProjetPage.jsx";
 
 export const routes = createBrowserRouter([
     {
-        path: "/",
+        path: "/", //Crée une page d'accueil
         element: (
             <Layout>
                 <Home/>
@@ -19,7 +19,7 @@ export const routes = createBrowserRouter([
         )
     },
     {
-        path: "/about",
+        path: "/about", //Crée une page à propos
         element: (
             <Layout>
                 <About/>
@@ -27,7 +27,7 @@ export const routes = createBrowserRouter([
         )
     },
     {
-        path: "/contact",
+        path: "/contact", //Crée une page de contact
         element: (
             <Layout>
                 <Contact/>
@@ -35,7 +35,7 @@ export const routes = createBrowserRouter([
         )
     },
     {
-        path: "/projets",
+        path: "/projets", //Crée une page pour afficher tous les projets
         element: (
             <Layout>
                 <ProjetsPage/>
@@ -43,21 +43,21 @@ export const routes = createBrowserRouter([
         )
     },
     {
-        path: "/projets/:id",
+        path: "/projets/:id",//Crée une page spécifique pour chaque projet
         element: (
             <Layout>
                 <ProjetPage/>
             </Layout>
         ),
         loader: projetLoader,
-        errorElement: (
+        errorElement: ( //Crée une page spécifique d'erreur si le projet n'existe pas
             <Layout>
-                <ErrorPage context="Le projet que vous rechercher n'existe pas"/>
+                <ErrorPage context="Le projet que vous rechercher n'existe pas"/> 
             </Layout>
         )
     },
     {
-        path: "*", //Crée une page spécifique d'erreur un url est introuvable
+        path: "*", //Crée une page spécifique d'erreur quand un url est introuvable
         element: (
             <Layout>
                 <ErrorPage />
@@ -67,19 +67,3 @@ export const routes = createBrowserRouter([
 ])
 
 
-
-//Exemple de route pour un logement
-// {
-//     path: "logement/:id",
-//     element: (
-//         <Layout>
-//             <Logement />
-//         </Layout>
-//     ),
-//     loader: logementLoader,
-//     errorElement: (
-//         <Layout>
-//             <ErrorPage />
-//         </Layout>
-//     ),
-// },

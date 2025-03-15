@@ -13,22 +13,16 @@
 
 .errorTitle {
   margin: 0;
-  font-size: 96px;
-  font-weight: 700;
- $color-danger: #dc3545;;
-  // @include mixins.media-query(desktop) {
-  //   font-size: 288px;
-  // }
+  font-size: 2em;
+  font-weight: 150;
+  color: #dc3545;
 }
 
 .errorMessage {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 1.3em;
   text-align: center;
-  $color-danger: #dc3545;
-  // @include mixins.media-query(desktop) {
-  //   font-size: 36px;
-  // }
+  color: #dc3545;
+  // font-weight: 300;
 }
 
 .errorRedirection {
@@ -36,10 +30,4 @@
   font-size: 14px;
   text-decoration: underline;
   font-weight: 500;
-  // @include mixins.media-query(desktop) {
-  //   font-size: 18px;
-  // }
 }
-
-
-

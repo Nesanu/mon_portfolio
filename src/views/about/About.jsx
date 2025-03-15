@@ -1,23 +1,6 @@
-import style from './About.module.scss';
+import styles from './About.module.scss';
 import Collapse from '../../components/collapse/Collapse.jsx';
 import PropTypes from 'prop-types';
-
-// const About = () => {
-//     return (
-//         <div className={styles.container}>
-//             <h1>Mon histoire</h1>
-//             <p>Ceci est la page About.</p>
-//             {/* TODO : Ajouter du contenu sur mon histoire */}
-//         </div>
-//     );
-// };
-
-// export default About;
-
-// import './style.scss';
-// import { Banner } from '../../components/banner/banner';
-// import Collapse from '../../components/collapse/Collapse';
-// import PropTypes from 'prop-types';
 
 
   /**Documentation de méthode 
@@ -32,23 +15,28 @@ export default function About() {
 	const aboutDatas = [
 		{
 			"id": "1",
-			"title": "Fiabilité",
-			"content": "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
-		},
+			"title": "Formation et expériences",
+			"content": "Après 19 années d’expérience dans l’administration des ventes, le commerce et l’export, où j’ai exercé en tant que gestionnaire et commerciale export au sein de plusieurs entreprises, j’ai choisi d’opérer une transition vers le développement web. Cette reconversion professionnelle s’est concrétisée par une formation intensive professionnalisante dispensée par OpenClassrooms, un organisme réputé pour la rigueur et la qualité de ses parcours pédagogiques, ainsi que pour sa solide réputation dans le domaine de la formation numérique. Cette formation m’a permis d’acquérir des compétences solides en développement web, et de me spécialiser dans le front-end."
+		}, 
 		{
 			"id": "2",
-			"title": "Respect",
-			"content": "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.."
+			"title": "Soft skills",
+			"content": "Je souhaite mettre à profit et au service de votre entreprise mon savoir-faire, mon organisation, mon aisance relationnelle, mon intégrité, mon dynamisme, ma capacité d’adaptation, mon sens de l'écoute et de compréhension de besoins complexes, ma combativité, ma persévérance, ma réactivité, ma rigueur et mon endurance."
 		},
 		{
 			"id": "3",
-			"title": "Service",
-			"content": "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.."
+			"title": "Compétences",
+			"content": "J’ai acquis des compétences opérationnelles, une maîtrise des technologies et une connaissance de divers langages techniques et méthodologies recherchés, qui me permettront d’être rapidement efficace. J’ai pu également développer d’excellentes capacités d’analyse et de synthèse, ainsi qu’un goût certain pour le travail en équipe."
 		},
 		{
 			"id": "4",
-			"title": "Sécurité",
-			"content": "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
+			"title": "Outils et méthodes",
+			"content": "Je suis à l’aise avec les outils de développement web tels que Visual Studio Code, Git, GitHub, les outils de gestion de projet comme Trello, les méthodes agiles, les langages HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, les bases de données, les outils de design comme Figma, les outils de déploiement comme Github Pages, Vercel, les outils de performance comme Lighthouse, les outils de SEO comme Google Analytics, Google Search Console, les outils de versionning comme Git, GitHub."
+		},
+		{
+			"id": "5",
+			"title": "Mes objectifs",
+			"content": "À court terme, mon objectif est d’achever ma formation et d’intégrer une entreprise, une ESN ou une startup. Je souhaite rejoindre une équipe de passionnés qui me permettra de développer aussi bien mes compétences techniques que mes aptitudes transversales. Sur le long terme, je vise à devenir une spécialiste du front en particulier des API et à maîtriser des frameworks comme Angular et d'autres langages comme Ruby. Je suis actuellement en recherche active d’un poste de développeuse web junior."
 		}
 	]
  /**Documentation de méthode 
@@ -63,12 +51,11 @@ export default function About() {
   * <About />
   */
 	return (    
-		<div className='about'>
-            {/* <Banner bannerType="about"/> */}
-			<div className='about_main'>
+		<div className={styles.about}>
+			<div className={styles.about_main}>
 				{aboutDatas.map(data => {
 					return (
-						<div key={data.id} className="about_main_collapse">
+						<div key={data.id} className={styles.about_main_collapse}>
 							<Collapse style={{margin:'30px 0'}}  title={data.title} content={data.content} />
 						</div>
 					)}
@@ -83,3 +70,15 @@ About.propTypes = {
 	content: PropTypes.string,
 	id: PropTypes.string,
 };
+
+
+// Exemple de la page About
+// // const About = () => {
+//     return (
+//         <div className={styles.container}>
+//             <h1>Mon histoire</h1>
+//             <p>Ceci est la page About.</p>
+//             {/: Ajouter du contenu sur mon histoire */}
+//         </div>
+//     );
+// };

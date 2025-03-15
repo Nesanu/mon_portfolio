@@ -49,7 +49,19 @@ const Contact = () => {
                             required
                         />
                     </div>
-
+                    {/* Prénom */}
+                    <div className={styles.formGroup}>
+                        <label htmlFor="surname">Prénom</label>
+                        <input
+                            type="text"
+                            id="surname"
+                            name="surname"
+                            value={formData.surname}
+                            onChange={handleChange}
+                            placeholder="Votre prénom"
+                            required
+                        />
+                    </div>
                     {/* Email */}
                     <div className={styles.formGroup}>
                         <label htmlFor="email">Email</label>

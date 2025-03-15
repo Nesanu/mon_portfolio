@@ -1,16 +1,19 @@
 .projetPage {
   font-family: Arial, sans-serif;
-  padding: 20px;
+  padding: 0;
   background-color: #f9fafb;
-  max-width: 800px;
+  max-width: 500px;
   margin: auto;
   line-height: 1.5;
 }
 
 .title {
-  font-size: 2.5rem;
-  color: #333;
+  font-size: 1.5em;
+  // color: #333;
   margin-bottom: 15px;
+  font-size: 1.5em;
+  color: #006699;
+  font-weight: bold;
 }
 
 .description {
@@ -55,6 +58,9 @@
     font-size: 1.5rem;
     color: #333;
     margin-bottom: 10px;
+    font-size: 1.25rem;
+    color: #006699;
+    font-weight: bold;
   }
 
   ul {
@@ -88,8 +94,7 @@
     font-weight: bold;
 
     &:hover {
-      background-color:#f0a500;
-      
+      background-color: #f0a500;
     }
   }
 }
@@ -105,6 +110,9 @@
     font-size: 1.5rem;
     color: #333;
     margin-bottom: 10px;
+    font-size: 1.25rem;
+    color: #006699;
+    font-weight: bold;
   }
 
   ul {
@@ -122,11 +130,10 @@
       font-size: 0.9rem;
       cursor: pointer;
       &:hover {
-        background-color:#006699;
+        background-color: #006699;
         color: #fff;
       }
     }
-    
   }
 
   p {

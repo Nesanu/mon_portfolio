@@ -1,46 +1,39 @@
 @use "/src/styles/index";
 
-// .container {
-//     background-color: pink;//exemple
-// }
+.about_main_collapse {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1023px;
+}
 
-.aboutContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-   height: min-content;
-  }
-  
-  .aboutContentContainer {
-    margin: 0 auto;
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1em;
+  padding: 0 20px;
+}
+
+.about_main {
+  width: 100%;
+  margin: 0 auto;
+  flex-grow: 1;
+  padding-bottom: 0;
+  height: min-content;
+  // object-fit: cover;
+  &_collapse {
+    margin: 20px auto;
     max-width: 1023px;
-    display: flex;
-    flex-direction: column;
-    // min-height: calc(100vh - 320px);
-    gap: 1em;
+    // @media screen and (max-width: 550px) {
+    //   margin: 20px auto;
+    // }
   }
-
-.about{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 1em;
-    // height: fit-content; /min-content
-
 }
 
-
-.about_main{
-    width: 95%;
-    margin: 0 auto;
-    flex-grow: 1;
-    padding-bottom: 0;
-    height: min-content;
-     // object-fit: cover;
-    &_collapse{
-        margin: 20px auto;
-        @media screen and (max-width: 550px){
-            margin: 20px auto;
-        }
-    }
-}
+// .about_Container {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 1em;
+//    height: min-content;
+//   }

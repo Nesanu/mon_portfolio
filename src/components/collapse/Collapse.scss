@@ -1,55 +1,60 @@
-// @use "/src/styles/variables";
-// @use "/src/styles/mixins";
+@use "/src/styles/variables";
+@use "/src/styles/mixins";
 @use "/src/styles/index";
 
 .collapse{
     display:flex;
     flex-direction: column;
     gap: 1em;
-    padding: 1em;
+    padding: 0;
     background-color: #F6F6F6;
     max-width: 1100px;
     // border-bottom-left-radius: 5px;
     // border-bottom-right-radius: 5px;
     border-radius: 10px;
-    min-height: 40px;
+    min-height: 35px;
     height: auto;
     margin: 0 auto;
-    font-size: inherit;
+    font-size: clamp(12px, 1.8vw, 18px);
+
     &_title{
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 10px;
-        background-color:  #f0a500;
+        background-color: #f0a500;
         color: #006699;
         border-radius: 10px;
         font-weight: 700;
         font-size: clamp(13px, 1.8vw, 18px);
         padding: 10px 10px;
         cursor: pointer;
+        transition: all 0.2s ease-in-out;
         .arrow{
             transition: all 0.2s ease-in-out;
             @media screen and (max-width: 1230px){
-                width: 12px;     
+                width: 8px;     
             }
         }
         .arrow_up{
             transform: rotate(0deg);
+            font-size: 1em;
         }
         .arrow_down{
             transform: rotate(180deg);
+            font-size: 1em;
         }
     }
     &_content{
         display: flex;
+        text-align: justify;
         flex-direction: column;
         gap: 5px;
         letter-spacing: 1px;
         visibility: visible;
         opacity: 1;
         height: auto;
-        padding: 10px;
+        padding: 5px;
         letter-spacing: 1px;
         font-size: clamp(12px, 1.8vw, 18px);
         color: black; 
@@ -65,22 +70,3 @@
     }
 }
 
-.accomodation_collapse{
-    display: flex;
-    justify-content: space-between;
-    gap: 70px;
-    margin: 20px auto;
-    width: 100%;
-    &_item{
-        width: 50%;
-    }
-    @media screen and (max-width: 650px){
-        flex-direction: column;
-        gap: 20px;
-        box-sizing: border-box;
-        margin: 20px auto;
-        &_item{
-            width: 100%;
-        }    
-    }
-}
